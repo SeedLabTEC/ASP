@@ -1,0 +1,104 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module classes</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>classes</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jonathan/Documentos/Proyecto_ASP/classes.py">/home/jonathan/Documentos/Proyecto_ASP/classes.py</a></font></td></tr></table>
+    <p><tt>-----------------------------------------------------------------------<br>
+This&nbsp;file&nbsp;contains&nbsp;the&nbsp;declaration&nbsp;of&nbsp;several&nbsp;classes&nbsp;which&nbsp;are&nbsp;used&nbsp;in<br>
+the&nbsp;analysis&nbsp;process.<br>
+-----------------------------------------------------------------------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="classes.html#CPU">CPU</a>
+</font></dt><dt><font face="helvetica, arial"><a href="classes.html#Data_Memory">Data_Memory</a>
+</font></dt><dt><font face="helvetica, arial"><a href="classes.html#Registers">Registers</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="CPU">class <strong>CPU</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>-----------------------------------------------------------------------<br>
+&nbsp;&nbsp;&nbsp;&nbsp;This&nbsp;class&nbsp;is&nbsp;used&nbsp;for&nbsp;storing&nbsp;the&nbsp;information&nbsp;obtained&nbsp;from&nbsp;the<br>
+&nbsp;&nbsp;&nbsp;&nbsp;analysis&nbsp;process.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;data_memory&nbsp;--&nbsp;data&nbsp;memory&nbsp;option&nbsp;that&nbsp;will&nbsp;be&nbsp;used<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;registers&nbsp;&nbsp;&nbsp;--&nbsp;bank&nbsp;of&nbsp;register&nbsp;(<a href="#Registers">Registers</a>&nbsp;object)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;operations&nbsp;&nbsp;--&nbsp;list&nbsp;of&nbsp;operations<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;addressing_levels&nbsp;--&nbsp;list&nbsp;of&nbsp;addressing&nbsp;levels<br>
+-----------------------------------------------------------------------<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="CPU-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>-------------------------------------------------------------------<br>
+Constructor&nbsp;method&nbsp;for&nbsp;the&nbsp;<a href="#CPU">CPU</a>&nbsp;class.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="CPU-printInfo"><strong>printInfo</strong></a>(self)</dt><dd><tt>-------------------------------------------------------------------<br>
+Method&nbsp;for&nbsp;defining&nbsp;the&nbsp;way&nbsp;of&nbsp;printing&nbsp;of&nbsp;a&nbsp;object&nbsp;of&nbsp;this&nbsp;class.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="CPU-print_Data_Mem"><strong>print_Data_Mem</strong></a>(self)</dt><dd><tt>-------------------------------------------------------------------<br>
+Method&nbsp;for&nbsp;printing&nbsp;the&nbsp;data&nbsp;memory&nbsp;of&nbsp;the&nbsp;cpu&nbsp;according&nbsp;to&nbsp;the&nbsp;option.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Data_Memory">class <strong>Data_Memory</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>-----------------------------------------------------------------------<br>
+This&nbsp;class&nbsp;is&nbsp;the&nbsp;model&nbsp;of&nbsp;a&nbsp;Data&nbsp;Memory&nbsp;so&nbsp;it&nbsp;has&nbsp;3&nbsp;attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;size&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;size&nbsp;of&nbsp;the&nbsp;memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;bus_dir&nbsp;&nbsp;&nbsp;--&nbsp;number&nbsp;of&nbsp;bits&nbsp;for&nbsp;addresing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;bus_data&nbsp;&nbsp;--&nbsp;number&nbsp;of&nbsp;bits&nbsp;for&nbsp;the&nbsp;data<br>
+-----------------------------------------------------------------------<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Data_Memory-__init__"><strong>__init__</strong></a>(self, size<font color="#909090">='-1'</font>, b_dir<font color="#909090">=-1</font>, b_data<font color="#909090">=-1</font>)</dt><dd><tt>-------------------------------------------------------------------<br>
+Constructor&nbsp;method&nbsp;for&nbsp;the&nbsp;<a href="#Data_Memory">Data_Memory</a>&nbsp;class.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Data_Memory-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>-------------------------------------------------------------------<br>
+Method&nbsp;for&nbsp;defining&nbsp;the&nbsp;way&nbsp;of&nbsp;printing&nbsp;of&nbsp;a&nbsp;object&nbsp;of&nbsp;this&nbsp;class.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Registers">class <strong>Registers</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>-----------------------------------------------------------------------<br>
+This&nbsp;class&nbsp;is&nbsp;the&nbsp;model&nbsp;of&nbsp;a&nbsp;bank&nbsp;of&nbsp;registers&nbsp;so&nbsp;it&nbsp;has&nbsp;2&nbsp;attributes:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;number&nbsp;--&nbsp;amount&nbsp;of&nbsp;register&nbsp;in&nbsp;the&nbsp;bank<br>
+&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;bits&nbsp;&nbsp;&nbsp;--&nbsp;number&nbsp;of&nbsp;bits&nbsp;for&nbsp;addresing&nbsp;the&nbsp;registers<br>
+-----------------------------------------------------------------------<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Registers-__init__"><strong>__init__</strong></a>(self, cant<font color="#909090">=-1</font>, bits<font color="#909090">=-1</font>)</dt><dd><tt>-------------------------------------------------------------------<br>
+Constructor&nbsp;method&nbsp;for&nbsp;the&nbsp;<a href="#Registers">Registers</a>&nbsp;class.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Registers-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>-------------------------------------------------------------------<br>
+Method&nbsp;for&nbsp;defining&nbsp;the&nbsp;way&nbsp;of&nbsp;printing&nbsp;of&nbsp;a&nbsp;object&nbsp;of&nbsp;this&nbsp;class.<br>
+-------------------------------------------------------------------</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

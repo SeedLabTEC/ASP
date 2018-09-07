@@ -1,0 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module GeneratorXML</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>GeneratorXML</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jonathan/Documentos/Proyecto_ASP/GeneratorXML.py">/home/jonathan/Documentos/Proyecto_ASP/GeneratorXML.py</a></font></td></tr></table>
+    <p><tt>---------------------------------------------------------------------------<br>
+This&nbsp;module&nbsp;has&nbsp;the&nbsp;<a href="#GeneratorXML">GeneratorXML</a>&nbsp;class&nbsp;which&nbsp;is&nbsp;the&nbsp;responsible&nbsp;for&nbsp;creating<br>
+the&nbsp;interface&nbsp;with&nbsp;the&nbsp;other&nbsp;systems.<br>
+----------------------------------------------------------------------------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="lxml.etree.html">lxml.etree</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="GeneratorXML.html#GeneratorXML">GeneratorXML</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="GeneratorXML">class <strong>GeneratorXML</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>-----------------------------------------------------------------------<br>
+This&nbsp;class&nbsp;is&nbsp;responsible&nbsp;creating&nbsp;the&nbsp;xml&nbsp;file&nbsp;with&nbsp;all&nbsp;the&nbsp;informartion<br>
+obtained&nbsp;of&nbsp;the&nbsp;analysis&nbsp;process.<br>
+-----------------------------------------------------------------------<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="GeneratorXML-__init__"><strong>__init__</strong></a>(self)</dt></dl>
+
+<dl><dt><a name="GeneratorXML-add_List_XML"><strong>add_List_XML</strong></a>(self, root, list, tag1, tag2)</dt><dd><tt>---------------------------------------------------------------<br>
+This&nbsp;method&nbsp;attaches&nbsp;a&nbsp;root&nbsp;child&nbsp;whose&nbsp;tag&nbsp;is&nbsp;given&nbsp;by&nbsp;the&nbsp;tag1<br>
+parameter.&nbsp;This&nbsp;child&nbsp;has&nbsp;others&nbsp;child&nbsp;every&nbsp;one&nbsp;with&nbsp;tag2&nbsp;and&nbsp;values<br>
+given&nbsp;by&nbsp;the&nbsp;list&nbsp;elements.<br>
+--------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="GeneratorXML-add_Mem_XML"><strong>add_Mem_XML</strong></a>(self, root, mem)</dt><dd><tt>------------------------------------------------------------------<br>
+Creates&nbsp;the&nbsp;child&nbsp;of&nbsp;the&nbsp;data&nbsp;memory&nbsp;for&nbsp;the&nbsp;xml&nbsp;file&nbsp;and&nbsp;add<br>
+it&nbsp;to&nbsp;the&nbsp;root.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="GeneratorXML-add_Regs_XML"><strong>add_Regs_XML</strong></a>(self, root, regs)</dt><dd><tt>------------------------------------------------------------------<br>
+Creates&nbsp;the&nbsp;child&nbsp;of&nbsp;the&nbsp;bank&nbsp;of&nbsp;registers&nbsp;for&nbsp;the&nbsp;xml&nbsp;file&nbsp;and&nbsp;add<br>
+it&nbsp;to&nbsp;the&nbsp;root.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="GeneratorXML-create_XML"><strong>create_XML</strong></a>(self, cpu)</dt><dd><tt>-----------------------------------------------------------------<br>
+Creates&nbsp;the&nbsp;xml&nbsp;file&nbsp;with&nbsp;all&nbsp;the&nbsp;information&nbsp;stored&nbsp;in&nbsp;the&nbsp;parameter<br>
+which&nbsp;must&nbsp;be&nbsp;a&nbsp;CPU&nbsp;object.<br>
+---------------------------------------------------------------------</tt></dd></dl>
+
+</td></tr></table></td></tr></table>
+</body></html>

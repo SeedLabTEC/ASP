@@ -1,0 +1,11 @@
+ lb sp,zero,ra
+ sub x0,x12,a2
+ sub tp,s11,t6
+ not
+#sltz
+#sgtz
+#snez
+#not
+#or
+#and
+#sub

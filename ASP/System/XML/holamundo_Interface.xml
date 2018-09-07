@@ -1,0 +1,1 @@
+<CPU><Registers><Amount>5</Amount><Bits>3</Bits></Registers><Data_Memory><Option>17</Option></Data_Memory><Operations><Operation>ADD</Operation></Operations><Addressing_levels><Level>32</Level></Addressing_levels></CPU>

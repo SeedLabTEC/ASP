@@ -1,0 +1,33 @@
+# This file presents for every ALU's operation the instructions who require
+# that operation. E.g: addi instruction requires the Add operation of the ALU.
+# Note: if you want add a commentary in this file you should start it with #
+
+ALU Operations |  Instructions and pseudo-instructions
+
+* ADD ---> add, addi, la, nop, mov, nop, auipc, lui, jal, jalr, lw, sw, lh, sh, sb, lb, lhu, lbu
+
+* SLL ---> sll, slli
+
+* SLT ---> slt, slti, sltz, seqz, blt, bge, blt, bge
+
+* SLTU ---> sltu, snez, seqz, sltiu, bltu, bgeu, bltu, bgeu
+
+* XOR ---> xor, xori, not
+
+* SRL ---> srl, srli
+
+* OR ---> or, ori
+
+* AND ---> and, andi
+
+* SUB ---> sub, neg, negw
+
+* SRA ---> sra, srai
+
+* BEQ ---> beq, bne
+
+# Dudas: lui (load upper immediate)
+#
+#
+#
+#

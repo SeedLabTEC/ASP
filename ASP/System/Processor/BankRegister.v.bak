@@ -1,0 +1,42 @@
+`timescale 1ns / 1ps
+        module regfile (input clk, //+
+                     input rst,//+
+                     input we3,//+ //write enable
+                     input [3:0] a1, //src1
+                     input [3:0] a2, //src2
+                     input [3:0] a3, //dst
+                     input [31:0] wd3,//+ //data input 
+                     output  [31:0] rd1, //+ //operand1
+                     output  [31:0] rd2); //+ //operand2                    
+        wire [31:0] outs [7:0];
+
+
+        //source registers selection (muxes)
+        assign rd1 = outs[a1];
+        assign rd2 = outs[a2];
+
+        reg[7:0] wen;
+        always@(a3, wen) begin
+            case (a3)
+0: wen = 1;
+1: wen = 2;
+2: wen = 4;
+3: wen = 8;
+4: wen = 16;
+5: wen = 32;
+6: wen = 64;
+7: wen = 128;
+8: wen = 256;
+
+endcase
+    
+        end 
+
+        //dynamic instantiation of registers
+        genvar i;
+        generate for (i=0; i<8; i=i+1) begin: regs_gen
+             Register reg32_inst(clk, rst, wen[i] && we3, wd3, outs[i]);
+            end
+        endgenerate
+
+        endmodule

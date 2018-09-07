@@ -1,0 +1,131 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module Analizer</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>Analizer</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/jonathan/Documentos/Proyecto_ASP/Analizer.py">/home/jonathan/Documentos/Proyecto_ASP/Analizer.py</a></font></td></tr></table>
+    <p><tt>---------------------------------------------------------------------------<br>
+This&nbsp;module&nbsp;has&nbsp;the&nbsp;<a href="#Analizer">Analizer</a>&nbsp;class&nbsp;which&nbsp;is&nbsp;the&nbsp;responsible&nbsp;for&nbsp;analyzing&nbsp;the<br>
+code&nbsp;of&nbsp;the&nbsp;specific&nbsp;application.<br>
+----------------------------------------------------------------------------</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="math.html">math</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="Analizer.html#Analizer">Analizer</a>
+</font></dt></dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Analizer">class <strong>Analizer</strong></a></font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>---------------------------------------------------------------------<br>
+This&nbsp;class&nbsp;is&nbsp;responsible&nbsp;for&nbsp;analyzing&nbsp;the&nbsp;code&nbsp;of&nbsp;the&nbsp;application<br>
+for&nbsp;determining&nbsp;the&nbsp;required&nbsp;operations,&nbsp;addressing&nbsp;levels&nbsp;and&nbsp;data<br>
+memory&nbsp;option.<br>
+----------------------------------------------------------------------<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Analizer-__init__"><strong>__init__</strong></a>(self, asm_code_file_test<font color="#909090">='__NoTest'</font>)</dt><dd><tt>------------------------------------------------------------------<br>
+Constructor&nbsp;method&nbsp;that&nbsp;through&nbsp;the&nbsp;parameter&nbsp;determine&nbsp;if&nbsp;the&nbsp;object<br>
+will&nbsp;be&nbsp;used&nbsp;for&nbsp;a&nbsp;unit&nbsp;test&nbsp;or&nbsp;for&nbsp;a&nbsp;normal&nbsp;execution&nbsp;of&nbsp;the&nbsp;tool.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-analize"><strong>analize</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+This&nbsp;method&nbsp;do&nbsp;the&nbsp;analysis&nbsp;of&nbsp;the&nbsp;application&nbsp;code&nbsp;and&nbsp;returns<br>
+a&nbsp;CPU&nbsp;object&nbsp;with&nbsp;all&nbsp;the&nbsp;information&nbsp;obtained.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-ask_for_memory_option"><strong>ask_for_memory_option</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+Asks&nbsp;for&nbsp;the&nbsp;memory&nbsp;option&nbsp;that&nbsp;will&nbsp;be&nbsp;used&nbsp;in&nbsp;the&nbsp;processor.<br>
+First,&nbsp;shows&nbsp;the&nbsp;three&nbsp;options&nbsp;and&nbsp;then&nbsp;the&nbsp;user&nbsp;has&nbsp;to&nbsp;enter&nbsp;the<br>
+1,&nbsp;2&nbsp;or&nbsp;3&nbsp;according&nbsp;to&nbsp;what&nbsp;she/he&nbsp;needs<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-determine_Regs_Bank_Info"><strong>determine_Regs_Bank_Info</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+Determines&nbsp;the&nbsp;information&nbsp;of&nbsp;the&nbsp;registers&nbsp;bank&nbsp;needed&nbsp;by<br>
+the&nbsp;kernel&nbsp;to&nbsp;be&nbsp;executed.<br>
+-&nbsp;Output:&nbsp;Registers&nbsp;object&nbsp;with&nbsp;the&nbsp;information.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-determine_addressing_levels"><strong>determine_addressing_levels</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+This&nbsp;method&nbsp;determines&nbsp;the&nbsp;addressing&nbsp;levels&nbsp;required&nbsp;by&nbsp;the<br>
+application.&nbsp;For&nbsp;doing&nbsp;this,&nbsp;checks&nbsp;which&nbsp;of&nbsp;the&nbsp;load&nbsp;and&nbsp;store<br>
+instructions&nbsp;are&nbsp;present&nbsp;in&nbsp;the&nbsp;code.&nbsp;Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;the<br>
+addressing&nbsp;levels:&nbsp;8,16,32,64&nbsp;[bits]<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-determine_bits_address"><strong>determine_bits_address</strong></a>(self, amount)</dt><dd><tt>------------------------------------------------------------------<br>
+This&nbsp;method&nbsp;determines&nbsp;the&nbsp;number&nbsp;of&nbsp;required&nbsp;bits&nbsp;for&nbsp;being<br>
+able&nbsp;to&nbsp;address&nbsp;amount&nbsp;number&nbsp;of&nbsp;objects&nbsp;like&nbsp;registers,&nbsp;addresses<br>
+memory,&nbsp;etc.<br>
+-Input:&nbsp;number&nbsp;of&nbsp;objects&nbsp;to&nbsp;be&nbsp;addressed.&nbsp;It&nbsp;should&nbsp;be&nbsp;positive.<br>
+-Output:&nbsp;number&nbsp;of&nbsp;bits&nbsp;required&nbsp;to&nbsp;address&nbsp;'amount'&nbsp;objects.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-determine_operations"><strong>determine_operations</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+Determines&nbsp;the&nbsp;operations&nbsp;that&nbsp;are&nbsp;used&nbsp;in&nbsp;the&nbsp;assembler&nbsp;code&nbsp;of&nbsp;the<br>
+application&nbsp;and&nbsp;put&nbsp;them&nbsp;into&nbsp;a&nbsp;list&nbsp;to&nbsp;be&nbsp;returned.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-get_ABI_Names_Aux"><strong>get_ABI_Names_Aux</strong></a>(self, reg_num)</dt><dd><tt>------------------------------------------------------------------<br>
+Returns&nbsp;a&nbsp;list&nbsp;with&nbsp;the&nbsp;ABI&nbsp;names&nbsp;of&nbsp;a&nbsp;specific&nbsp;register.<br>
+The&nbsp;reg_num&nbsp;parameter&nbsp;specifies&nbsp;the&nbsp;register&nbsp;of&nbsp;interest.<br>
+This&nbsp;method&nbsp;is&nbsp;used&nbsp;by&nbsp;the&nbsp;get_ABI_Names_Regs&nbsp;method.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-get_ABI_Names_Regs"><strong>get_ABI_Names_Regs</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+This&nbsp;method&nbsp;returns&nbsp;a&nbsp;list&nbsp;with&nbsp;the&nbsp;ABI&nbsp;names&nbsp;that&nbsp;are<br>
+used&nbsp;by&nbsp;the&nbsp;RISCV&nbsp;assembler.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-get_ABI_Names_of_Reg"><strong>get_ABI_Names_of_Reg</strong></a>(self, reg, mat)</dt><dd><tt>------------------------------------------------------------------<br>
+Return&nbsp;a&nbsp;list&nbsp;with&nbsp;all&nbsp;the&nbsp;ABI&nbsp;names&nbsp;for&nbsp;a&nbsp;register.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-get_Instrs"><strong>get_Instrs</strong></a>(self, asm_file)</dt><dd><tt>--------------------------------------------------------------<br>
+Reads&nbsp;the&nbsp;file&nbsp;with&nbsp;the&nbsp;assembler&nbsp;code&nbsp;and&nbsp;puts&nbsp;the&nbsp;instructions<br>
+in&nbsp;the&nbsp;list&nbsp;to&nbsp;be&nbsp;returned<br>
+-----------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-get_Instrs_by_Operations_Dic"><strong>get_Instrs_by_Operations_Dic</strong></a>(self)</dt><dd><tt>------------------------------------------------------------------<br>
+Returns&nbsp;a&nbsp;dictionary&nbsp;that&nbsp;contains,&nbsp;for&nbsp;every&nbsp;ALU&nbsp;operation,&nbsp;the<br>
+intructions&nbsp;that&nbsp;require&nbsp;the&nbsp;operation.&nbsp;For&nbsp;doing&nbsp;this,&nbsp;reads&nbsp;the&nbsp;file<br>
+instrs_operations_data.<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+<dl><dt><a name="Analizer-is_register"><strong>is_register</strong></a>(self, element, mat)</dt><dd><tt>------------------------------------------------------------------<br>
+Returns&nbsp;True&nbsp;if&nbsp;the&nbsp;parameter&nbsp;element&nbsp;is&nbsp;the&nbsp;name&nbsp;of&nbsp;a&nbsp;register&nbsp;of<br>
+RISC-V<br>
+------------------------------------------------------------------</tt></dd></dl>
+
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>ASM_CODE_FILE</strong> = 'op2.s'<br>
+<strong>INSTRS_BY_OPERATION_FILE</strong> = 'instrs_operations_data'</td></tr></table>
+</body></html>
