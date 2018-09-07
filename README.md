@@ -1,2 +1,2 @@
 # ASP
-Es proyecto de síntesis a  nivel de procesador, a partir del código fuente de un programa en c.
+Development of a tool for generating customized processors for specific applications.
