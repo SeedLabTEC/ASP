@@ -1,4 +1,4 @@
-# ASP (Application Specific Processor)
+# TailoredCore
 
 ## Description
 Development of a tool for generating customized processors for specific applications.
